@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  LoginForm,
-  LoginPage,
+  RegisterForm,
+  RegisterPage,
   Username,
   Password,
   Text,
@@ -14,9 +14,9 @@ import {
 function Register() {
   return (
     <>
-      <LoginPage>
+      <RegisterPage>
         <Title>Register</Title>
-        <LoginForm>
+        <RegisterForm>
           <Label>Username</Label>
           <Username placeholder="Username"></Username>
           <Label>Password</Label>
@@ -24,11 +24,11 @@ function Register() {
           <Label>Re-Type Password</Label>
           <Password placeholder="Re-Type Password" type="password"></Password>
           <Button to="/e-auctiondetails">Register</Button>
-        </LoginForm>
+        </RegisterForm>
         <Text>
           Already Registered?<Clicker to="/login">Sign In</Clicker>
         </Text>
-      </LoginPage>
+      </RegisterPage>
     </>
   );
 }

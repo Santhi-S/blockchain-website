@@ -1,8 +1,8 @@
 import React from "react";
 import {
-  LoginForm,
-  LoginPage,
-  Username,
+  EAuctionForm,
+  EAuctionPage,
+  Input,
   Button,
   Title,
   FormWrapper,
@@ -13,9 +13,9 @@ import {
 function EAuction() {
   return (
     <>
-      <LoginPage>
+      <EAuctionPage>
         <Title>E-Auction Details</Title>
-        <LoginForm>
+        <EAuctionForm>
           <FormWrapper>
             <Label>Commodity:</Label>
             <Select>
@@ -29,15 +29,15 @@ function EAuction() {
           </FormWrapper>
           <FormWrapper>
             <Label>Duration:</Label>
-            <Username />
+            <Input />
           </FormWrapper>
           <FormWrapper>
             <Label>Next Auction:</Label>
-            <Username />
+            <Input />
           </FormWrapper>
           <Button to="/liveauction">Enter Live Auction</Button>
-        </LoginForm>
-      </LoginPage>
+        </EAuctionForm>
+      </EAuctionPage>
     </>
   );
 }

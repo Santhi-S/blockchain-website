@@ -8,13 +8,13 @@ export const Title = styled.div`
   margin-bottom: 20px;
 `;
 
-export const LoginPage = styled.div`
+export const RegisterPage = styled.div`
   display: absolute;
   padding: 200px 250px;
   margin: 0 350px;
 `;
 
-export const LoginForm = styled.form`
+export const RegisterForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;

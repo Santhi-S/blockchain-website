@@ -8,19 +8,19 @@ export const Title = styled.div`
   margin-bottom: 20px;
 `;
 
-export const LoginPage = styled.div`
+export const EAuctionPage = styled.div`
   display: absolute;
   padding: 200px;
   margin: 0 350px;
 `;
 
-export const LoginForm = styled.form`
+export const EAuctionForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
 
-export const Username = styled.input`
+export const Input = styled.input`
   margin-bottom: 20px;
   height: 30px;
 `;
@@ -64,14 +64,4 @@ export const Button = styled(Link)`
     color: #000;
     border: 2px solid light green;
   }
-`;
-
-export const Text = styled.p`
-  text-align: center;
-`;
-
-export const Clicker = styled(Link)`
-  margin-left: 5px;
-  text-decoration: none;
-  color: red;
 `;
