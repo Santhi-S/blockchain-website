@@ -53,7 +53,7 @@ function Navbar({ toggle }) {
   return (
     <>
       <NavBar>
-        <NavLogo>Kerala Agricultue EAuction</NavLogo>
+        <NavLogo>Kerala Agricultue E-Auction</NavLogo>
         <NavMenu>
           <NavItem>
             <NavLinks to="/" onClick={closeMobileMenu}>

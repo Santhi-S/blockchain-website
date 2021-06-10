@@ -4,35 +4,3 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-
-#anchor {
-  text-decoration: none;
-  color: #000;
-}
-
-#proceed {
-  background: beige;
-  white-space: nowrap;
-  padding: 12px 20px;
-  color: #000;
-  font-size: 16px;
-  text-decoration: none;
-  border: 2px solid #000;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  font-weight: bold;
-}
-
-#proceed:hover {
-  transition: all 0.2s ease-in-out;
-  background: #000;
-  color: #fff;
-  border: 2px solid #fff;
-}
-
-#proceed:hover #anchor {
-  color: #fff;
-}
