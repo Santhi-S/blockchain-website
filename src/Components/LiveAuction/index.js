@@ -7,6 +7,7 @@ import {
   BoxWrapper,
   Button,
 } from "./LiveAuction.styles";
+import "../../App.css";
 
 function LiveAuction() {
   return (
@@ -36,7 +37,7 @@ function LiveAuction() {
             <Box>70</Box>
             <Box>0.00034</Box>
             <Box>
-              <Button to="/">Proceed</Button>
+              <Button to="/page">Proceed</Button>
             </Box>
           </tr>
           <tr>
@@ -52,7 +53,7 @@ function LiveAuction() {
             <Box>60</Box>
             <Box>0.00029</Box>
             <Box>
-              <Button to="/">Proceed</Button>
+              <Button to="/page">Proceed</Button>
             </Box>
           </tr>
         </Table>

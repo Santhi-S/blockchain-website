@@ -15,6 +15,12 @@ function App() {
         <Route path="/register" exact component={RegisterPage} />
         <Route path="/e-auctiondetails" exact component={EAuctionPage} />
         <Route path="/liveauction" exact component={LiveAuctionPage} />
+        <Route
+          path="/page"
+          render={() => {
+            window.location.href = "page.html";
+          }}
+        />
       </Switch>
     </Router>
   );

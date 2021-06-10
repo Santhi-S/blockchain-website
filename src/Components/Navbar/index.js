@@ -75,12 +75,12 @@ function Navbar({ toggle }) {
             {dropdown2 && <Dropdown2 />}
           </NavItem>
           <NavItem>
-            <NavLinks to="/" onClick={closeMobileMenu}>
+            <NavLinks to="/e-auctiondetails" onClick={closeMobileMenu}>
               More Info
             </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/" onClick={closeMobileMenu}>
+            <NavLinks to="/e-auctiondetails" onClick={closeMobileMenu}>
               e-Auction
             </NavLinks>
           </NavItem>
