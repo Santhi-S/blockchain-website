@@ -1,17 +1,19 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const LiveAuctionPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+`;
+
 export const Title = styled.div`
   font-size: 36px;
   text-align: center;
   font-weight: 700;
   margin-bottom: 20px;
-`;
-
-export const LiveAuctionPage = styled.div`
-  display: absolute;
-  padding: 100px;
-  margin: 0 200px;
 `;
 
 export const Table = styled.table`

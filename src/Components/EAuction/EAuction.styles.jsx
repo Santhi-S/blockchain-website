@@ -1,23 +1,31 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Title = styled.div`
-  font-size: 36px;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 20px;
+export const EAuctionPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 `;
 
-export const EAuctionPage = styled.div`
-  display: absolute;
-  padding: 200px;
-  margin: 0 350px;
+export const Title = styled.div`
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
 `;
 
 export const EAuctionForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 30vw;
+`;
+
+export const Label = styled.div`
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 `;
 
 export const Input = styled.input`
@@ -33,12 +41,6 @@ export const Select = styled.select`
 export const FormWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-`;
-
-export const Label = styled.div`
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
 `;
 
 export const Button = styled(Link)`

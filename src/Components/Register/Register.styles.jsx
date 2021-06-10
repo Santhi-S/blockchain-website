@@ -1,31 +1,34 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Title = styled.div`
-  font-size: 36px;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 20px;
+export const RegisterPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 `;
 
-export const RegisterPage = styled.div`
-  display: absolute;
-  padding: 200px 250px;
-  margin: 0 350px;
+export const Title = styled.div`
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
 `;
 
 export const RegisterForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 20vw;
 `;
 
-export const Username = styled.input`
-  margin-bottom: 20px;
-  height: 30px;
+export const Label = styled.div`
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 `;
 
-export const Password = styled.input`
+export const Input = styled.input`
   margin-bottom: 20px;
   height: 30px;
 `;
@@ -55,18 +58,8 @@ export const Button = styled(Link)`
   }
 `;
 
-export const Text = styled.p`
-  text-align: center;
-`;
-
 export const Clicker = styled(Link)`
   margin-left: 5px;
   text-decoration: none;
   color: red;
-`;
-
-export const Label = styled.div`
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
 `;

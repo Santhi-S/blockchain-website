@@ -2,9 +2,7 @@ import React from "react";
 import {
   RegisterForm,
   RegisterPage,
-  Username,
-  Password,
-  Text,
+  Input,
   Clicker,
   Button,
   Title,
@@ -18,16 +16,16 @@ function Register() {
         <Title>Register</Title>
         <RegisterForm>
           <Label>Username</Label>
-          <Username placeholder="Username"></Username>
+          <Input placeholder="Username" />
           <Label>Password</Label>
-          <Password placeholder="Password" type="password"></Password>
+          <Input placeholder="Password" type="password" />
           <Label>Re-Type Password</Label>
-          <Password placeholder="Re-Type Password" type="password"></Password>
+          <Input placeholder="Re-Type Password" type="password" />
           <Button to="/e-auctiondetails">Register</Button>
         </RegisterForm>
-        <Text>
+        <p>
           Already Registered?<Clicker to="/login">Sign In</Clicker>
-        </Text>
+        </p>
       </RegisterPage>
     </>
   );

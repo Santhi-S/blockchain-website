@@ -2,9 +2,7 @@ import React from "react";
 import {
   LoginForm,
   LoginPage,
-  Username,
-  Password,
-  Text,
+  Input,
   Clicker,
   Button,
   Title,
@@ -18,14 +16,14 @@ function Login() {
         <Title>Log In</Title>
         <LoginForm>
           <Label>Username</Label>
-          <Username placeholder="Username"></Username>
+          <Input placeholder="Username" />
           <Label>Password</Label>
-          <Password placeholder="Password" type="password"></Password>
+          <Input placeholder="Password" type="password" />
           <Button to="/e-auctiondetails">Login</Button>
         </LoginForm>
-        <Text>
+        <p>
           Not Registered?<Clicker to="/register">Create an account</Clicker>
-        </Text>
+        </p>
       </LoginPage>
     </>
   );
