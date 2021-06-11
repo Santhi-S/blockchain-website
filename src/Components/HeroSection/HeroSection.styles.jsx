@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "../../bg-hero1.jpg";
+import background from "../../bg-hero.jpg";
 import { Link } from "react-router-dom";
 
 export const HeroContainer = styled.div`

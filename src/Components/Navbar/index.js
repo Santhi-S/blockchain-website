@@ -10,14 +10,9 @@ import {
 import Dropdown from "../Dropdown/index";
 import Dropdown2 from "../Dropdown2/index";
 
-function Navbar({ toggle }) {
-  const [, setClick] = useState(false);
-
+function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
-
-  const closeMobileMenu = () => setClick(false);
-
   const onMouseEnter = () => {
     if (window.innerWidth < 900) {
       setDropdown(false);
@@ -53,36 +48,30 @@ function Navbar({ toggle }) {
   return (
     <>
       <NavBar>
-        <NavLogo>Kerala Agricultue E-Auction</NavLogo>
+        <NavLogo>Kerala Agriculture E-Auction</NavLogo>
         <NavMenu>
           <NavItem>
-            <NavLinks to="/" onClick={closeMobileMenu}>
-              Home
-            </NavLinks>
+            <NavLinks to="/">Home</NavLinks>
           </NavItem>
           <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-            <NavLinks to="/" onClick={closeMobileMenu}>
+            <NavLinks to="/">
               Participants
               <FaCaretDown />
             </NavLinks>
             {dropdown && <Dropdown />}
           </NavItem>
           <NavItem onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>
-            <NavLinks to="/" onClick={closeMobileMenu}>
+            <NavLinks to="/">
               AWRMS in Kerala
               <FaCaretDown />
             </NavLinks>
             {dropdown2 && <Dropdown2 />}
           </NavItem>
           <NavItem>
-            <NavLinks to="/e-auctiondetails" onClick={closeMobileMenu}>
-              More Info
-            </NavLinks>
+            <NavLinks to="/e-auctiondetails">More Info</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/e-auctiondetails" onClick={closeMobileMenu}>
-              e-Auction
-            </NavLinks>
+            <NavLinks to="/e-auctiondetails">e-Auction</NavLinks>
           </NavItem>
         </NavMenu>
       </NavBar>
