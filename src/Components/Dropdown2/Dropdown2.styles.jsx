@@ -1,4 +1,7 @@
-.dropdown-menu {
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+export const DropdownMenu = styled.ul`
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: red;
   width: 200px;
@@ -6,22 +9,18 @@
   top: 80px;
   list-style: none;
   text-align: start;
-}
+`;
 
-.dropdown-menu li {
+export const DropdownList = styled.li`
   background: #fff;
   cursor: pointer;
-}
 
-.dropdown-menu li:hover {
-  background: #f2f2f2;
-}
+  &:hover {
+    background: #f2f2f2;
+  }
+`;
 
-.dropdown-menu.clicked {
-  display: none;
-}
-
-.dropdown-link {
+export const DropdownLink = styled(Link)`
   display: block;
   height: 100%;
   width: 100%;
@@ -29,10 +28,4 @@
   color: #004289;
   padding: 16px;
   font-size: 14px;
-}
-
-@media screen and (max-width: 960px) {
-  .FaCaretDown {
-    display: none;
-  }
-}
+`;

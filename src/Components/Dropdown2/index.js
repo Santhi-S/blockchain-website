@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { MenuItems } from "./MenuItems2";
-import "./Dropdown2.css";
-import { Link } from "react-router-dom";
+import {
+  DropdownList,
+  DropdownMenu,
+  DropdownLink,
+} from "./Dropdown2.styles.jsx";
 
 function Dropdown() {
   const [click, setClick] = useState(false);
@@ -10,24 +13,21 @@ function Dropdown() {
 
   return (
     <>
-      <ul
-        onClick={handleClick}
-        className={click ? "dropdown-menu clicked" : "dropdown-menu"}
-      >
+      <DropdownMenu onClick={handleClick}>
         {MenuItems.map((item, index) => {
           return (
-            <li key={index}>
-              <Link
+            <DropdownList key={index}>
+              <DropdownLink
                 className={item.cName}
                 to={item.path}
                 onClick={() => setClick(false)}
               >
                 {item.title}
-              </Link>
-            </li>
+              </DropdownLink>
+            </DropdownList>
           );
         })}
-      </ul>
+      </DropdownMenu>
     </>
   );
 }
